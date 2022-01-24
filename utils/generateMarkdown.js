@@ -93,9 +93,9 @@ function generateMarkdown(data) {
   * [Project Description](#project-description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Test Instructions](#test-instructions)
   * [License](#license)
   * [Contributions](#contributions)
+  * [Test Instructions](#test-instructions)
   * [Questions](#questions)
 
   # Project Description
