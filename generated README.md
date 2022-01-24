@@ -17,8 +17,6 @@
 
   # Project Description
   This project will prompt a user for a series of questions and generate a well-formatted README.md file based on the answers submitted.
-  Walkthrough video of this Good README Generator project (https://drive.google.com/file/d/11RpTXttCBhdXaqH9Vvt0qx0oM4r7egvO/view?usp=sharing)
-  See 'generated README.md' to see what was generated during the video.
 
   # Installation
   Navigate to Github and clone the Good README repository. Open the solution using VS Code and you are ready to go.

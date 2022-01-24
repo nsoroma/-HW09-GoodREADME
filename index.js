@@ -25,7 +25,7 @@ const questions = [
             if (validDescription) {
                 return true;
             } else {
-                console.log('A Description for this project is required. Please enter it here:');
+                console.log('A Description for this project is required. Try again.');
                 return false;
             }
         }
@@ -38,7 +38,7 @@ const questions = [
             if (validInstall) {
                 return true;
             } else {
-                console.log('Installation Instructions are required:');
+                console.log('Installation Instructions are required.');
                 return false;
             }
         }
@@ -46,17 +46,43 @@ const questions = [
     {
         type:'input', 
         name:'usageInfo', 
-        message:'Please add usage information: '
+        message:'Please add usage information: ',
+        validate: validUsage => {
+            if (validUsage) {
+                return true;
+            } else {
+                console.log('Usage Instructions are required.');
+                return false;
+            }
+        }
     },
     {
         type:'input', 
         name:'contributing', 
-        message:'What are the contribution guidelines?'
+        message:'What are the contribution guidelines?',
+        validate: validContribution => {
+            if (validContribution) {
+                return true;
+            } else {
+                console.log('Contribution Guidelines are required.');
+                return false;
+            }
+        }
+    
     },
     {
         type:'input', 
         name:'testIns', 
-        message:'Please add test instructions: '
+        message:'Please add testing instructions: ',
+        validate: validTest => {
+            if (validTest) {
+                return true;
+            } else {
+                console.log('Testing Instructions are required.');
+                return false;
+            }
+        }
+
     },
     {
         type:'list', 
@@ -73,7 +99,28 @@ const questions = [
     {
         type:'input', 
         name:'githubuser', 
-        message:'What is the GitHub username?'
+        message:'What is the GitHub username?',
+        validate: validUserName => {
+            if (validUserName) {
+                return true;
+            } else {
+                console.log('A Github username is required.');
+                return false;
+            }
+        }
+    },
+    {
+        type:'input', 
+        name:'email', 
+        message:'What is your email address?',
+        validate: validEmail => {
+            if (validEmail) {
+                return true;
+            } else {
+                console.log('An email address is required.');
+                return false;
+            }
+        }
     }
 ]
 

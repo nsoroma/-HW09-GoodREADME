@@ -91,9 +91,9 @@ function generateMarkdown(data) {
   ## Table of Contents
 
   * [Project Description](#project-description)
-  * [Installation Instructions](#installation)
-  * [Usage Information](#usageInfo)
-  * [Test Instructions](#tests)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Test Instructions](#test-instructions)
   * [License](#license)
   * [Contributions](#contributions)
   * [Questions](#questions)
@@ -109,13 +109,15 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
-  # Contributing Information 
+  # Contributions 
   ${data.contributing}
 
   # Test Instructions 
   ${data.testIns}
 
   # Questions 
+  For additional questions, please contact me at [${data.email}](mailto:${data.email})
+
   https://github.com/${data.githubuser}
 `;
 }
